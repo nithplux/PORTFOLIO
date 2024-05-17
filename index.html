@@ -1,438 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PORTFOLIO | KEVIN RIZABAL</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
-
-  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
-  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
- 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTFOLIO | KEVIN RIZABAL</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="loader"></div>
-  <div id="myDiv">
-    <!--HEADER-->
-    <div class="header">
-      <div class="bg-color">
-        <header id="main-header">
-          <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#">PORT<span class="logo-dec">FOLIO</span></a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#main-header">Descargar CV</a></li>
-                  <li class=""><a href="#feature">Sobre Mi</a></li>
-                  <li class=""><a href="#service">Habilidades</a></li>
-                  <li class=""><a href="#portfolio">Certificados</a></li>
-                  <li class=""><a href="#testimonial">Testimonial</a></li>
-                  <li class=""><a href="#blog">Blog</a></li>
-                  <li class=""><a href="#contact">Contactame</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <div class="wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="banner-info text-center wow fadeIn delay-05s">
-                <h3 class="bnr-title">BIENVENIDO A MI <span>PORTFOLIO como estasasdasd</span></h3>
-                <div class="perfil img">
-                    <img src="img/perfil.jpeg" alt="Imagen de perfil">
-                    </div>
-                <h2 class="bnr-sub-title">
-                  
-                  KEVIN ADRIAN RIZABAL CHAVESTA</h2>
-                <p class="bnr-para">Puedes conocer mas sobre mi deslizando hacia abajo <br> De lo contrario puedes descargar mi CV desde el Boton Verde <br>
-                
-                  <div class="brn-btn">
-                
-                  <a href="curriculum/CURRICULUM VITAE-KEVIN.pdf" class="btn btn-download" download="CURRICULUM VITAE-KEVIN.pdf">DESCARGAR CV</a>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">PORTFOLIO</a>
                 </div>
-                <div class="overlay-detail">
-                  <a href="#feature"><i class="fa fa-angle-down"></i></a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBREMI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </header>
     </div>
-    
-    <!--/ HEADER-->
-    <!---->
-    <section id="feature" class="section-padding wow fadeIn delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser01.png">
-              </div>
-              <h3 class="pad-bt15">Creative Concept</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!--SECCION INCIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div> 
+            <h1>KEVIN RIZABAL</h1>
+            <h2>INGENIERO DE SOFTWARE</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/kevin-adrian-rizabal-chavesta-69552827a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nithplux?tab=projects"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/912454308"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:sekdatarn001@outlook.es"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://orcid.org/0009-0002-2942-6905"><i class="fa-brands fa-orcid"></i></a>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser02.png">
-              </div>
-              <h3 class="pad-bt15">Amazing Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser03.png">
-              </div>
-              <h3 class="pad-bt15">Cost effective</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser04.png">
-              </div>
-              <h3 class="pad-bt15">Secure</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <section id="service" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">What We Do?</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>esign And Developement</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
+    </section> 
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p>
+                <span>
+                    ¡Saludos!, soy Kevin Rizabal.
+                </span>
+                Me complace presentarme como un apasionado estudiante en las etapas finales de mi formación en Ingeniería de Software.
+                Mi entusiasmo por ingresar al mundo laboral y sumergirme en el vasto océano de las Tecnologías de la Información es palpable y sincero.
+                Mi deseo ardiente es contribuir activamente y crecer profesionalmente en un entorno dinámico como el de su empresa.
+                Busco la oportunidad de adquirir experiencia invaluable y de aplicar mis conocimientos en proyectos desafiantes que impulsen el crecimiento mutuo.
+                Con cada día que pasa, me comprometo a cultivar habilidades y competencias que me permitan ser un activo invaluable en el campo de las Tecnologías de la Información.
+                Estoy ansioso por enfrentar nuevos desafíos y aprender de cada experiencia, con el objetivo de convertirme en un profesional altamente competente y confiable.
+                Agradezco sinceramente la oportunidad de presentarme ante ustedes y espero con entusiasmo la posibilidad de contribuir al éxito de su equipo.
+                Estoy seguro de que juntos podemos lograr grandes cosas.
+                ¡Gracias por considerar mi perfil!
+            </p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31-08-1999
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            912454308
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sekdatarn001@outlook.es
+                        </li>
+                        <li>
+                            <strong>Web</strong>
+                            https://portfoliorizabal.azurewebsites.net/
+                        </li>
+                    </ul>
+
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-brands fa-react"></i>
+                                <span>REACT</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-database"></i>
+                                <span>SQL SERVER</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>GESTION DE PROYECTOS</span>
+                            </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>W</span>ebsite Maintenance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>S</span>eo Optimization</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>D</span>igital Marketing</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">Learn more...</a>
-            </div>
-          </div>
+            <button>
+                DESCARGAR CV <i class="fa-solid fa-download"></i>
+                <a href="curriculum/CURRICULUMVITAE.pdf" class="overlay" download></a>
+            </button>
+            
         </div>
-      </div>
     </section>
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Our Recent Works</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port01.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port02.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port03.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port04.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port05.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/port06.jpg" class="img-responsive">
-              <figcaption>
-                <h2>Project For Everyone</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
-    <section id="testimonial" class="wow fadeInUp delay-05s">
-      <div class="bg-testicolor">
-        <div class="container section-padding">
-          <div class="row">
-            <div class="testimonial-item">
-              <ul class="bxslider">
-                <li>
-                  <blockquote>
-                    <img src="img/thumb.png" class="img-responsive">
-                    <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another. </p>
-                  </blockquote>
-                  <small>Shaun Paul, Client</small>
-                </li>
-                <li>
-                  <blockquote>
-                    <img src="img/thumb.png" class="img-responsive">
-                    <p>So here is us, on the raggedy edge. Don't push me, and I won't push you. </p>
-                  </blockquote>
-                  <small>Marry Smith, Client</small>
-                </li>
-                <li>
-                  <blockquote>
-                    <img src="img/thumb.png" class="img-responsive">
-                    <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another.</p>
-                  </blockquote>
-                  <small>Vivek Singh, Client</small>
-                </li>
-                <li>
-                  <blockquote>
-                    <img src="img/thumb.png" class="img-responsive">
-                    <p>So here is us, on the raggedy edge. Don't push me, and I won't push you.</p>
-                  </blockquote>
-                  <small>John Doe, Client</small>
-                </li>
-              </ul>
+    <!--SECCION HABILIDADES-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!--HABILIDADES TECNICAS-->
+                <div class="col">
+                    <h3>HABLIDADES TECNICAS <i class="fa-solid fa-gears"></i></h3>
+                    <div class="skill">
+                        <span>HTML & CSS <i class="fa-brands fa-html5"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso html">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVASCRIPT <i class="fa-brands fa-js"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL SERVER <i class="fa-solid fa-server"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>OFFICEMATICA <i class="fa-solid fa-file"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso office">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <section id="blog" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Latest from our blog</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="blog-sec">
-              <div class="blog-img">
-                <a href="">
-                  <img src="img/blog01.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="blog-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="blog-comment">
-                  <p>Posted In: <span>Legal Advice</span></p>
-                  <p>
-                    <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                    <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="blog-sec">
-              <div class="blog-img">
-                <a href="">
-                  <img src="img/blog02.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="blog-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="blog-comment">
-                  <p>Posted In: <span>Legal Advice</span></p>
-                  <p>
-                    <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                    <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="blog-sec">
-              <div class="blog-img">
-                <a href="">
-                  <img src="img/blog03.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="blog-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="blog-comment">
-                  <p>Posted In: <span>Legal Advice</span></p>
-                  <p>
-                    <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                    <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <section id="contact" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center white">
-            <h2 class="service-title pad-bt15">Keep in touch with us</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line white-bg">
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="loction-info white">
-              <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>A99 Adam Street<br>Texas, TX 555072</p>
-              <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>consultas@servitecflhuaraz.com</p>
-              <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+41 5787 2323</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="col-md-6 padding-right-zero">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-submit">SEND NOW</button>
-                </div>
-              </form>
+            <!--HABILIDADES PROFESIONALES-->
+            <div class="col">
+                <h3>HABLIDADES PROFESIONALES <i class="fa-solid fa-briefcase"></i></h3>
+                    <div class="skill">
+                        <span>COMUNICACION <i class="fa-solid fa-comments"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO <i class="fa-solid fa-people-group"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PROYECT MANAGEMENT <i class="fa-solid fa-person-chalkboard"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACION <i class="fa-solid fa-clipboard"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
 
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <!---->
-    <!---->
-    <footer id="footer">
-      <div class="container">
-        <div class="row text-center">
-          <p>&copy; ProOnliPc Theme. All Rights Reserved.</p>
-          <div class="credits">
-        
-            Designed by <a href="https://www.youtube.com/channel/UCDH0DJaVLkCDtl_YN9hhByw/featured?view_as=subscriber">ProOnliPc</a>
-          </div>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>
+                        EDUCACION
+                    </h3>
+                    <div class="item izq">
+                        <h4>
+                            INGENIERIA DE SOFTWARE
+                        </h4>
+                        <span class="casa">UNIVERSIDAD TECNOLOGICA DEL PERU</span>
+                        <span class="fecha">10mo Ciclo</span>
+                        <p>
+                            Actual estudiante de la carrera de Ingenieria de Software cursando el ultimo ciclo academico
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>
+                            CURSO DISEÑO DE BASE DE DATOS
+                        </h4>
+                        <span class="casa">UNIVERSIDAD NACIONAL DE INGENIERIA</span>
+                        <span class="fecha">2023</span>
+                        <p>
+                            Curso de introduccion y desarrollo de base de datos en Microsoft SQL Server
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>
+                        EXPERIENCIA LABORAL
+                    </h3>
+                    <div class="item der">
+                        <h4>
+                            CAJA CENCONSUD
+                        </h4>
+                        <span class="casa">DEL 12/05/2019 AL 30/08/2019</span>
+                        <span >CARGO: ASESOR DE PRODUCTOS FINANCIEROS</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>
+                            TIENDAS MAAC
+                        </h4>
+                        <span class="casa">DEL 20/06/2017 AL 03/03/2018</span>
+                        <span >CARGO: ATENCION AL CLIENTE</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>
+                            DIRIS LIMA NORTE
+                        </h4>
+                        <span class="casa">DEL 01/01/2020 A ACTUALIDAD</span>
+                        <span >CARGO: TECNICO ADMINISTRATIVO EN LA OFICINA DE ARCHIVO CENTRAL</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
+    <!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>
+                PORTFOLIO
+            </h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="curriculum/certificados/constestudios.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            CONSTANCIA DE ESTUDIOS
+                        </h3>
+                        <p>INGENIERIA DE SOFTWARE:UTP</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_algoritmos.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            EDURED
+                        </h3>
+                        <p>ALGORITMOS Y ESTRUCTURA DE DATOS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_cisco.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            CISCO
+                        </h3>
+                        <p>CURSCO CISCO CCNA ROUTING & SWITCHING : INTRODUCCION A REDES</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_bduni.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            UNIVERSIDAD NACIONAL DE INGENIERIA
+                        </h3>
+                        <p>DISEÑO DE BASE DE DATOS SQL SERVER (BASICO)</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_comercio.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            HACKATON UTP - EL COMERCIO
+                        </h3>
+                        <p>PARTICIPACION EN LA HACKATON 2022</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_empresarial.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            UNIVERSIDAD CESAR VALLEJO
+                        </h3>
+                        <p>DIPLOMADO EN GESTION EMPRESARIAL</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_dw1.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            GOOGLE
+                        </h3>
+                        <p>DESARROLLO WEB I</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_dw2.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            GOOGLE
+                        </h3>
+                        <p>DESARROLLO WEB II</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_excel.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            CAMPUS VIRTUAL ROMERO
+                        </h3>
+                        <p>EXCEL INTERMEDIO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_office.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            MTPE
+                        </h3>
+                        <p>WORD Y EXCEL PARA EL TRABAJO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_ciber.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            GOOGLE
+                        </h3>
+                        <p>CIBERSEGURIDAD EN EL TELETRABAJO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_mov.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            FUNDACION TELEFONICA MOVISTAR
+                        </h3>
+                        <p>DESARROLLO DE PLAN DIGITAL DE COMUNICACION</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_ingles.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            ICPNA
+                        </h3>
+                        <p>INGLES NIVEL INTERMEDIO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_laccei.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            LACCEI 2024 - THE OAS SUMMIT OF ENGINEERING FOR THE AMERICAS
+                        </h3>
+                        <p>Proyecto de investigación sobre Análisis de la
+                            Eficiencia Organizativa a través de Sistemas de
+                            Gestión Documentaria aprobado y reconocido
+                            para su publicación</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTAME</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="TU NOMBRE">
+                    <input type="text" placeholder="NUMERO TELEFONICO">
+                    <input type="text" placeholder="DIRECCION DE CORREO">
+                    <input type="text" placeholder="TEMA">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="DEJAME AQUI TU MENSAJE"></textarea>
+                    <button>
+                        ENVIAR MENSAJE<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--MAPA-->
+                <div class="col">
+                    <img src="img/map.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                LIMA,BREÑA POMABAMBA 692
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                CONTACTAME AL 912454308
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                EMAIL : sekdatarn001@outlook.es
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/kevin-adrian-rizabal-chavesta-69552827a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nithplux?tab=projects"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/912454308"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:sekdatarn001@outlook.es"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://orcid.org/0009-0002-2942-6905"><i class="fa-brands fa-orcid"></i></a>
+        </div>
     </footer>
-    <!---->
-  </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
