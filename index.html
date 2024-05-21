@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PORTFOLIO | KEVIN RIZABAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">PORTFOLIO</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBREMI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+    </div>
+    <!--SECCION INCIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div> 
+            <h1>KEVIN RIZABAL CHAVESTA</h1>
+            <h2>INGENIERO DE SOFTWARE</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/kevin-adrian-rizabal-chavesta-69552827a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nithplux?tab=projects"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/912454308"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:sekdatarn001@outlook.es"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://orcid.org/0009-0002-2942-6905"><i class="fa-brands fa-orcid"></i></a>
+            </div>
+        </div>
+    </section> 
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p>
+                <span>
+                    ¡Saludos!, soy Kevin Rizabal.
+                </span>
+                Me complace presentarme como un apasionado estudiante en las etapas finales de mi formación en Ingeniería de Software.
+                Mi entusiasmo por ingresar al mundo laboral y sumergirme en el vasto océano de las Tecnologías de la Información es palpable y sincero.
+                Mi deseo ardiente es contribuir activamente y crecer profesionalmente en un entorno dinámico como el de su empresa.
+                Busco la oportunidad de adquirir experiencia invaluable y de aplicar mis conocimientos en proyectos desafiantes que impulsen el crecimiento mutuo.
+                Con cada día que pasa, me comprometo a cultivar habilidades y competencias que me permitan ser un activo invaluable en el campo de las Tecnologías de la Información.
+                Estoy ansioso por enfrentar nuevos desafíos y aprender de cada experiencia, con el objetivo de convertirme en un profesional altamente competente y confiable.
+                Agradezco sinceramente la oportunidad de presentarme ante ustedes y espero con entusiasmo la posibilidad de contribuir al éxito de su equipo.
+                Estoy seguro de que juntos podemos lograr grandes cosas.
+                ¡Gracias por considerar mi perfil!
+            </p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31-08-1999
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            912454308
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sekdatarn001@outlook.es
+                        </li>
+                        <li>
+                            <strong>Web</strong>
+                            https://portfoliorizabal.azurewebsites.net/
+                        </li>
+                    </ul>
+
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-brands fa-react"></i>
+                                <span>REACT</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-database"></i>
+                                <span>SQL SERVER</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>GESTION DE PROYECTOS</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                DESCARGAR CV <i class="fa-solid fa-download"></i>
+                <a href="curriculum/CURRICULUMVITAE.pdf" class="overlay" download></a>
+            </button>
+            
+        </div>
+    </section>
+    <!--SECCION HABILIDADES-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!--HABILIDADES TECNICAS-->
+                <div class="col">
+                    <h3>HABLIDADES TECNICAS <i class="fa-solid fa-gears"></i></h3>
+                    <div class="skill">
+                        <span>HTML & CSS <i class="fa-brands fa-html5"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso html">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVASCRIPT <i class="fa-brands fa-js"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL SERVER <i class="fa-solid fa-server"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>OFFICEMATICA <i class="fa-solid fa-file"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso office">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--HABILIDADES PROFESIONALES-->
+            <div class="col">
+                <h3>HABLIDADES PROFESIONALES <i class="fa-solid fa-briefcase"></i></h3>
+                    <div class="skill">
+                        <span>COMUNICACION <i class="fa-solid fa-comments"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO <i class="fa-solid fa-people-group"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PROYECT MANAGEMENT <i class="fa-solid fa-person-chalkboard"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACION <i class="fa-solid fa-clipboard"></i></span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>
+                        EDUCACION
+                    </h3>
+                    <div class="item izq">
+                        <h4>
+                            INGENIERIA DE SOFTWARE
+                        </h4>
+                        <span class="casa">UNIVERSIDAD TECNOLOGICA DEL PERU</span>
+                        <span class="fecha">10mo Ciclo</span>
+                        <p>
+                            Actual estudiante de la carrera de Ingenieria de Software cursando el ultimo ciclo academico
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>
+                            CURSO DISEÑO DE BASE DE DATOS
+                        </h4>
+                        <span class="casa">UNIVERSIDAD NACIONAL DE INGENIERIA</span>
+                        <span class="fecha">2023</span>
+                        <p>
+                            Curso de introduccion y desarrollo de base de datos en Microsoft SQL Server
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>
+                        EXPERIENCIA LABORAL
+                    </h3>
+                    <div class="item der">
+                        <h4>
+                            CAJA CENCONSUD
+                        </h4>
+                        <span class="casa">DEL 12/05/2019 AL 30/08/2019</span>
+                        <span >CARGO: ASESOR DE PRODUCTOS FINANCIEROS</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>
+                            TIENDAS MAAC
+                        </h4>
+                        <span class="casa">DEL 20/06/2017 AL 03/03/2018</span>
+                        <span >CARGO: ATENCION AL CLIENTE</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>
+                            DIRIS LIMA NORTE
+                        </h4>
+                        <span class="casa">DEL 01/01/2020 A ACTUALIDAD</span>
+                        <span >CARGO: TECNICO ADMINISTRATIVO EN LA OFICINA DE ARCHIVO CENTRAL</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>
+                PORTFOLIO
+            </h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="curriculum/certificados/constestudios.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            CONSTANCIA DE ESTUDIOS
+                        </h3>
+                        <p>INGENIERIA DE SOFTWARE:UTP</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_algoritmos.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            EDURED
+                        </h3>
+                        <p>ALGORITMOS Y ESTRUCTURA DE DATOS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_cisco.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            CISCO
+                        </h3>
+                        <p>CURSCO CISCO CCNA ROUTING & SWITCHING : INTRODUCCION A REDES</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_bduni.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            UNIVERSIDAD NACIONAL DE INGENIERIA
+                        </h3>
+                        <p>DISEÑO DE BASE DE DATOS SQL SERVER (BASICO)</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_comercio.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            HACKATON UTP - EL COMERCIO
+                        </h3>
+                        <p>PARTICIPACION EN LA HACKATON 2022</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_empresarial.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            UNIVERSIDAD CESAR VALLEJO
+                        </h3>
+                        <p>DIPLOMADO EN GESTION EMPRESARIAL</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_dw1.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            GOOGLE
+                        </h3>
+                        <p>DESARROLLO WEB I</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_dw2.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            GOOGLE
+                        </h3>
+                        <p>DESARROLLO WEB II</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_excel.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            CAMPUS VIRTUAL ROMERO
+                        </h3>
+                        <p>EXCEL INTERMEDIO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_office.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            MTPE
+                        </h3>
+                        <p>WORD Y EXCEL PARA EL TRABAJO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_ciber.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            GOOGLE
+                        </h3>
+                        <p>CIBERSEGURIDAD EN EL TELETRABAJO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_mov.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            FUNDACION TELEFONICA MOVISTAR
+                        </h3>
+                        <p>DESARROLLO DE PLAN DIGITAL DE COMUNICACION</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_ingles.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            ICPNA
+                        </h3>
+                        <p>INGLES NIVEL INTERMEDIO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="curriculum/certificados/cer_laccei.png" alt="">
+                    <div class="overlay">
+                        <h3>
+                            LACCEI 2024 - THE OAS SUMMIT OF ENGINEERING FOR THE AMERICAS
+                        </h3>
+                        <p>Proyecto de investigación sobre Análisis de la
+                            Eficiencia Organizativa a través de Sistemas de
+                            Gestión Documentaria aprobado y reconocido
+                            para su publicación</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTAME</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <form action="https://formsubmit.co/7b21a12178a1f5e882dbc7c665b67c74" method="POST" >
+                    <input type="text" name="NOMBRE :" placeholder="TU NOMBRE">
+                    <input type="text" name="NUMERO TELEFONICO :" placeholder="NUMERO TELEFONICO">
+                    <input type="email" name="CORREO ELECTRONICO DE CONTACTO :" placeholder="DIRECCION DE CORREO">
+                    <input type="text" name="TEMA :" placeholder="TEMA">
+                    <textarea name="COMENTARIOS :" id="" cols="30" rows="10" placeholder="DEJAME AQUI TU MENSAJE"></textarea>
+                    <button>
+                        ENVIAR MENSAJE<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://portfoliorizabal.azurewebsites.net/">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    </form>
+                </div>
+                <!--MAPA-->
+                <div class="col">
+                    <img src="img/map.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                LIMA,BREÑA POMABAMBA 692
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                CONTACTAME AL 912454308
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                EMAIL : sekdatarn001@outlook.es
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/kevin-adrian-rizabal-chavesta-69552827a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/nithplux?tab=projects"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/912454308"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:sekdatarn001@outlook.es"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://orcid.org/0009-0002-2942-6905"><i class="fa-brands fa-orcid"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
